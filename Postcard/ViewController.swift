@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
+    @IBOutlet weak var mailButton: UIButton!
     
  
     
@@ -35,6 +36,8 @@ class ViewController: UIViewController {
             // Sets the text field to blank after submit
         enterMessageTextField.resignFirstResponder()
             // Hides the keyboard
+        
+        mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         
     }
     
